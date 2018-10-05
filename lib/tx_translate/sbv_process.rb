@@ -28,7 +28,7 @@ module TxTranslate
         subbed += timeline_content_array[i] + "\n" + context_content_array[i] + "\n\n"
       end
 
-      file = File.open("#{basename}zh-si.srt", 'w') { |f| f.write(subbed) }
+      file = File.open("#{basename}zh-si.sbv", 'w') { |f| f.write(subbed) }
     end
 
   end
