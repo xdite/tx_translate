@@ -4,6 +4,7 @@ module TxTranslate
 
     def self.run(filename)
       file = File.open(filename, "r")
+      basename = File.basename(filename, "md")
       contents = file.read
       new_contents = ""
 
@@ -17,7 +18,7 @@ module TxTranslate
         new_contents += old_content_array[i] + "\n\n" + new_content_array[i] + "\n\n"
       end
 
-      file = File.open("#{ARGV[1]}_new.md", "w") { |f| f.write(new_contents) }
+      file = File.open("#{basename}zh-si.md", "w") { |f| f.write(new_contents) }
     end
   end
 end

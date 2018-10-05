@@ -26,10 +26,11 @@ gem 'tx_translate'
 ```
 
 
-## Usage　使用方式
+## Usage 使用方式
 
 * tx_translate word "This is a book" # 翻译一句话
 * tx_translate sbv FILENAME # 翻译字幕
+* tx_translate srt FILENAME # 翻译中英对照文档
 * tx_translate md FILENAME # 翻译中英对照文档
 
 

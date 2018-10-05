@@ -35,7 +35,11 @@ module TxTranslate
     desc 'sbv FILENAME', '翻译 sbv 档'
     def sbv(filename)
       TxTranslate::SbvProcess.run(filename)
-      #  file = File.open("#{ARGV[1] || ARGV[0].split(".").first}_new.sbv", "w") { |f| f.write(subbed) }
+    end
+
+    desc 'srt FILENAME', '翻译 srt 档'
+    def srt(filename)
+      TxTranslate::SrtProcess.run(filename)
     end
 
     desc 'md FILENAME', '翻译 markdown 档'
