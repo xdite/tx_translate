@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tx_translate (0.1.4)
+    tx_translate (0.0.1)
       activesupport
       httparty
       json
