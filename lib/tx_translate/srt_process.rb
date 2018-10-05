@@ -9,7 +9,6 @@ module TxTranslate
       contents = file.read + "\n\n"
       contents.gsub!("\r\n", "\n") # 处理 CRLF 转 LF 问题
 
-      puts contents
 
       subbed = ''
 
