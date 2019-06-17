@@ -4,7 +4,7 @@ require 'cgi'
 
 module TxTranslate
   class ParallelArray
-  
+
 
     def process_amount
       TxTranslate.config[:process_amount] || 5
@@ -36,12 +36,8 @@ module TxTranslate
         end
 
         @hydra.queue(request)
-
-        if i % process_amount == 0
-          @hydra.run
-        elsif i == @content_array.size - 1
-          @hydra.run
-        end
+        sleep(1.0/process_amount)
+        @hydra.run
       end
 
       @result_array

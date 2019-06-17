@@ -15,7 +15,7 @@ module TxTranslate
     end
 
     def host
-      "tmt.#{region}.tencentcloudapi.com"
+      "tmt.tencentcloudapi.com"
     end
 
     def url
